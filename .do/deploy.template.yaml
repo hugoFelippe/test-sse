@@ -1,8 +1,0 @@
-spec:
-  name: sample-php
-  services:
-  - environment_slug: php
-    git:
-      branch: main
-      repo_clone_url: https://github.com/hugoFelippe/sse-test.git
-    name: sample-php

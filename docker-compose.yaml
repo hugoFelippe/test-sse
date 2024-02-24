@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  api:
+    image: marcelosantoro/nginx-php74:latest
+    container_name: api_testes
+    entrypoint:
+      - /./start.sh
+    volumes:
+      - './services/nginx.conf:/etc/nginx/sites-available/default.conf'
+      - './services/start.sh:/start.sh'
+      - './services/source:/var/www/'
