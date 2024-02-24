@@ -45,6 +45,5 @@ chmod -R 777 /var/www/cache/
 chmod -R 777 /var/www/logs/
 chmod -R 777 /var/www/vendor/
 
-update-ca-certificates
 
 exec /usr/bin/supervisord -n -c /etc/supervisord.conf
