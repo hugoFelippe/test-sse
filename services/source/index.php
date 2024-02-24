@@ -1,10 +1,5 @@
 <?php
 
-header('Content-Type: text/event-stream');
-header('Cache-Control: no-cache');
-header('Connection: keep-alive');
-header('X-Accel-Buffering: no');
-
 $statusCode = 200;
 // Emulate sending headers like a PHP framework would.
 header('Connection: keep-alive', false, $statusCode);
